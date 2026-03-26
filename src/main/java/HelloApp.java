@@ -5,6 +5,7 @@ public class HelloApp {
 		if (args.length > 0) {
 			names = String.join(", ", args);
 		}
+		
 		System.out.println("Hello " + names + "!");
     }
 
