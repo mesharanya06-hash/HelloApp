@@ -2,11 +2,13 @@ public class HelloApp {
 
     public static void main(String[] args) {
 		StringBuilder nameBuilder = new StringBuilder();
-		for (int i = 0; i < args.length; i++) {
-			nameBuilder.append(args[i]);
-			if (i < args.length -1) {
+		boolean first = true;
+		for (String name : args) {
+			if (!first) {
 				nameBuilder.append(", ");
 			}
+			nameBuilder.append(name);
+			first = false;
 		
 		} 
 		String name = nameBuilder.toString();
